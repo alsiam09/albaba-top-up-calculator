@@ -1,0 +1,28 @@
+let input = document.querySelector('.input')
+let unipinin = document.querySelector('.unipinin')
+let btn = document.querySelector('.btn')
+let d25 = document.querySelector('.d25')
+let d50 = document.querySelector('.d50')
+let d115 = document.querySelector('.d115')
+let d240 = document.querySelector('.d240')
+let d610 = document.querySelector('.d610')
+let d1240 = document.querySelector('.d1240')
+let d2530 = document.querySelector('.d2530')
+let dwe = document.querySelector('.dwe')
+let dma = document.querySelector('.dma')
+let dla = document.querySelector('.dla')
+
+btn.addEventListener("click" , ()=>{
+    if (input.value) {
+        d25.innerHTML = Math.ceil(20 / ( unipinin.value / input.value))
+        d50.innerHTML = Math.ceil(36 / ( unipinin.value / input.value))
+        d115.innerHTML = Math.ceil(80 / ( unipinin.value / input.value))
+        d240.innerHTML = Math.ceil(160 / ( unipinin.value / input.value))
+        d610.innerHTML = Math.ceil(405 / ( unipinin.value / input.value))
+        d1240.innerHTML = Math.ceil(810 / ( unipinin.value / input.value))
+        d2530.innerHTML = Math.ceil(1625 / ( unipinin.value / input.value))
+        dwe.innerHTML = Math.ceil(161 / ( unipinin.value / input.value))
+        dma.innerHTML = Math.ceil(800 / ( unipinin.value / input.value))
+        dla.innerHTML =  Math.ceil(162 / ( unipinin.value / input.value))
+    }
+})
